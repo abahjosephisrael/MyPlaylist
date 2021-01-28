@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyPlaylistApi</name>
+    </assembly>
+    <members>
+        <member name="T:MyPlaylistApi.Controllers.MainController">
+            <summary>
+            This is the base controller of this application that other controllers inherits.
+            The Mediator is the messenger/middle man between this controller and other controllers in this application.
+            </summary>
+        </member>
+        <member name="P:MyPlaylistApi.Controllers.MainController.Mediator">
+            <summary>
+            This is the entry point to all the controllers in  this application.
+            It send http request through the mediator messenger to any controller that is invoked.
+            </summary>
+        </member>
+        <member name="T:MyPlaylistApi.Controllers.VideoController">
+            <summary>
+            This controller handles all crud of playlist
+            </summary>
+        </member>
+        <member name="M:MyPlaylistApi.Controllers.VideoController.#ctor">
+            <summary>
+            Contructor for dependency injections if any.
+            </summary>
+        </member>
+        <member name="M:MyPlaylistApi.Controllers.VideoController.PlayList(Domain.DTOs.PlaylistDTO)">
+            <summary>
+            This action method handles adding video to playlist
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyPlaylistApi.Controllers.VideoController.PlayList(Application.Features.Commands.PlayListCommands.UpdatePlaylistCommand)">
+            <summary>
+            This action method handles the update operation of video
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyPlaylistApi.Controllers.VideoController.PlayList(Application.Features.Commands.PlayListCommands.DeletePlaylistCommand)">
+            <summary>
+            This endpoint handles the deletion of video from playlist
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MyPlaylistApi.Controllers.VideoController.GetAll">
+            <summary>
+            This endpoint returns all videos in the play list.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MyPlaylistApi.Controllers.VideoController.GetById(System.Guid)">
+            <summary>
+            This endpoint returns a particular video whose id is parsed.
+            </summary>
+            <param name="VideoId"></param>
+            <returns></returns>
+        </member>
+        <member name="P:MyPlaylistApi.Startup.Configuration">
+            <summary>
+            Field delcaration
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:MyPlaylistApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)" -->
+    </members>
+</doc>
