@@ -1,0 +1,25 @@
+﻿@model List<VideoVM>
+@{
+    ViewData["Title"] = "Search Result";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="container">
+    <div class="row">
+        @foreach (var video in Model)
+        {
+        <div class="col-4">
+
+            <div class="card" style="width: 18rem;">
+                <img src="@video.image" class="card-img-top" alt="thumbnail">
+                <div class="card-body">
+                    <h5 class="card-title">@video.title</h5>
+                    <p class="card-text">@video.Description</p>
+                </div>
+            </div>
+
+
+        </div>
+        }
+    </div>
+</div>
