@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
-namespace MyPlaylistMvc.ViewModels
+namespace Domain.DTOs
 {
-    public class VideoVM
+    public class VideoDTO
     {
         public string title { get; set; }
         public string image { get; set; }

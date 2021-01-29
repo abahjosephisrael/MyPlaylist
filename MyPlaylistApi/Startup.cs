@@ -71,7 +71,7 @@ namespace MyPlaylistApi
             //Enable middleware to serve Swagger-ui (HTML, JS, CSS),
             //specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(s => {
-                s.SwaggerEndpoint("/swagger/v1/swagger.json", "MyPlaylistApi");
+                s.SwaggerEndpoint("../swagger/v1/swagger.json", "MyPlaylistApi");
             });
             #endregion
         }
