@@ -21,6 +21,7 @@ namespace MyPlaylistMvc.Controllers
         {
             return View();
         }
+
         [HttpGet]
         public async Task<IActionResult> Search( [FromQuery] string query)
         {
