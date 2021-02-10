@@ -30,7 +30,7 @@ namespace Externals.YouTube
                 List<VideoDTO> videos = new List<VideoDTO>();
                 var youtubeService = new YouTubeService(new BaseClientService.Initializer()
                 {
-                    ApiKey = "",//The key you got from developer console.
+                    ApiKey = "AIzaSyBJlg9m-mKhQmrHRFQoiCC-7TqHemQyN-g",//The key you got from developer console.
                     ApplicationName = this.GetType().ToString()
                 });
 
